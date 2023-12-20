@@ -3,7 +3,7 @@ from .models.response import ResponseGet
 from .models.request import RequestGet
 
 
-class Requests:
+class ContactRequests:
     def __init__(self, base_config: dict) -> None:
         self.__base_config = base_config
 

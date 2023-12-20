@@ -1,4 +1,4 @@
-from .contact import Requests
+from .contact import ContactRequests
 
 
 class ApolloSdk:
@@ -7,4 +7,4 @@ class ApolloSdk:
             'api_key': api_key,
             'url_base': 'https://api.apollo.io/v1/'
         }
-        self.contact = Requests(base_config=self.__base_config)
+        self.contact = ContactRequests(base_config=self.__base_config)
