@@ -3,7 +3,7 @@ from .organization import Organization
 
 
 class Data(BaseModel):
-    organization: Organization = Field(default=None, alias='organization')
+    organization: Organization = Field(default=None, alias='enriched_organization')
     first_name: str = Field(default=None, alias='first_name')
     last_name: str = Field(default=None, alias='last_name')
     email: str = Field(default=None, alias='email')
