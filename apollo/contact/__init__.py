@@ -1,1 +1,1 @@
-from .requests import ContactRequests
+from .contact_requests import ContactRequests
