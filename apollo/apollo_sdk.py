@@ -1,4 +1,5 @@
 from .contact import ContactRequests
+from .emailer_messages import EmailerMessagesRequests
 
 
 class ApolloSdk:
@@ -8,3 +9,4 @@ class ApolloSdk:
             'url_base': 'https://api.apollo.io/v1/'
         }
         self.contact = ContactRequests(base_config=self.__base_config)
+        self.emailer_messages = EmailerMessagesRequests(base_config=self.__base_config)
