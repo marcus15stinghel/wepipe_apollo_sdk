@@ -1,1 +1,1 @@
-from .response_contact import ResponseContact
+from .response_get import ResponseGet

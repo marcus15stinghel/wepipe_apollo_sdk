@@ -1,1 +1,1 @@
-from .api_contact import ApiContact
+from .requests import Requests

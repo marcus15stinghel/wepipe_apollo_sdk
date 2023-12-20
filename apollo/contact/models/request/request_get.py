@@ -1,4 +1,4 @@
-class Get:
+class RequestGet:
     def __init__(self, base_config: dict, name: str, email: str):
         self.__api_key = base_config['api_key']
         self.__url_base = base_config['url_base']
