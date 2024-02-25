@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open('requirements.txt') as file:
+with open('requirements.txt', encoding='utf-16le') as file:
     requirements = file.read().splitlines()
 
 setup(
