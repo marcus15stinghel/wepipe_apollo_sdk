@@ -31,6 +31,5 @@ setup(
     name=NAME,
     version=__version__,
     install_requires=all_requirements,
-    package_dir={PACKAGE: path.join(SOURCE, PACKAGE)},
     packages=find_packages(where=path.join(here, SOURCE))
 )
