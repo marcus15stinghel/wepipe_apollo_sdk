@@ -9,6 +9,12 @@ if requirements and requirements[0].startswith('\ufeff'):
 setup(
     name='apollo_sdk',
     version='1.0',
-    packages=find_packages(),
+    license='MIT License',
+    author='Marcus Stinghel',
+    long_description_content_type="text/markdown",
+    author_email='caio@pythonando.com.br',
+    keywords='panda video',
+    description=u'Wrapper não oficial do Panda Video',
+    packages=['src'],
     install_requires=requirements
 )

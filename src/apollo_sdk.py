@@ -1,7 +1,7 @@
-from contact import ContactRequests
-from emailer_messages import EmailerMessagesRequests
-from enriched_organization import EnrichedOrganizationRequests
-from people import People
+from src.contact import ContactRequests
+from src.emailer_messages import EmailerMessagesRequests
+from src.enriched_organization import EnrichedOrganizationRequests
+from src.people import People
 
 
 class ApolloSdk:
