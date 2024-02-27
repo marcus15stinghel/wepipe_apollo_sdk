@@ -7,7 +7,7 @@ if requirements and requirements[0].startswith('\ufeff'):
     requirements[0] = requirements[0][1:]
 
 setup(
-    name='apollo_sdk',
+    name='wepipe_apollo_sdk',
     version='1.0',
     author='Marcus Stinghel',
     author_email='caio@pythonando.com.br',
