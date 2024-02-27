@@ -4,7 +4,7 @@ from src.enriched_organization import EnrichedOrganizationRequests
 from src.people import People
 
 
-class ApolloSdk:
+class WepipeApolloSdk:
     def __init__(self, api_key: str):
         self.__base_config = {
             'api_key': api_key,

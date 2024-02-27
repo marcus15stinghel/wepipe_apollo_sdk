@@ -1,1 +1,1 @@
-from .apollo_sdk import ApolloSdk
+from .wepipe_apollo_sdk import WepipeApolloSdk
