@@ -1,17 +1,36 @@
+from codecs import open
+from os import path
+from typing import List, Dict
+
 from setuptools import setup, find_packages
 
-with open('requirements.txt', encoding='utf-16le') as file:
-    requirements = file.read().splitlines()
+from src.wepipe_apollo_sdk.__version__ import __version__
 
-if requirements and requirements[0].startswith('\ufeff'):
-    requirements[0] = requirements[0][1:]
+PACKAGE = "wepipe_apollo_sdk"
+NAME = "wepipe_apollo_sdk"
+SOURCE = "src"
+REQUIREMENTS_FILE = "requirements.txt"
+
+here = path.abspath(path.dirname(__file__))
+
+
+def get_requirements(requirements_file_path: str) -> List[str]:
+    """
+    Obtém todas as dependências listadas em um arquivo de dependências.
+
+    :param requirements_file_path: caminho para o arquivo de dependências.
+    :return: lista de strings contendo as dependências.
+    """
+    with open(requirements_file_path) as requirements_file:
+        return [req.strip() for req in requirements_file.readlines()]
+
+
+all_requirements = get_requirements(requirements_file_path=REQUIREMENTS_FILE)
 
 setup(
-    name='wepipe_apollo_sdk',
-    version='1.0',
-    author='Marcus Stinghel',
-    author_email='caio@pythonando.com.br',
-    description='Python SDK for Apollo',
-    packages=find_packages(where='src'),
-    install_requires=requirements
+    name=NAME,
+    version=__version__,
+    install_requires=all_requirements,
+    package_dir={PACKAGE: path.join(SOURCE, PACKAGE)},
+    packages=find_packages(where=path.join(here, SOURCE))
 )

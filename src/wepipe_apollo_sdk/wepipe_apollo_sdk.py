@@ -1,7 +1,7 @@
-from src.contact import ContactRequests
-from src.emailer_messages import EmailerMessagesRequests
-from src.enriched_organization import EnrichedOrganizationRequests
-from src.people import People
+from src.wepipe_apollo_sdk.contact import ContactRequests
+from src.wepipe_apollo_sdk.emailer_messages import EmailerMessagesRequests
+from src.wepipe_apollo_sdk.enriched_organization import EnrichedOrganizationRequests
+from src.wepipe_apollo_sdk.people import People
 
 
 class WepipeApolloSdk:
