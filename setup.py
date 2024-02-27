@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('requirements.txt', encoding='utf-16le') as file:
     requirements = file.read().splitlines()
@@ -12,7 +12,6 @@ setup(
     author='Marcus Stinghel',
     author_email='caio@pythonando.com.br',
     description='Python SDK for Apollo',
-    packages=['src'],
-    package_dir={"": "src"},
+    packages=find_packages(where='src'),
     install_requires=requirements
 )
