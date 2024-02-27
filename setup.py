@@ -1,4 +1,4 @@
-from codecs import open
+# from codecs import open
 from os import path
 from typing import List, Dict
 
@@ -21,7 +21,7 @@ def get_requirements(requirements_file_path: str) -> List[str]:
     :param requirements_file_path: caminho para o arquivo de dependências.
     :return: lista de strings contendo as dependências.
     """
-    with open(requirements_file_path) as requirements_file:
+    with open(requirements_file_path, 'r', encoding='utf-8-sig') as requirements_file:
         return [req.strip() for req in requirements_file.readlines()]
 
 
