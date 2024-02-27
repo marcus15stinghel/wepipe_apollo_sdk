@@ -13,5 +13,6 @@ setup(
     author_email='caio@pythonando.com.br',
     description='Python SDK for Apollo',
     packages=['src'],
+    package_dir={"": "src"},
     install_requires=requirements
 )
