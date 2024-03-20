@@ -12,5 +12,5 @@ class WepipeApolloSdk:
         }
         self.contact = ContactRequests(base_config=self.__base_config)
         self.emailer_messages = EmailerMessagesRequests(base_config=self.__base_config)
-        self.enriched_organizations = EnrichedOrganizationRequests(self.__base_config)
-        self.people = People(self.__base_config)
+        self.enriched_organizations = EnrichedOrganizationRequests(base_config=self.__base_config)
+        self.people = People(base_config=self.__base_config)

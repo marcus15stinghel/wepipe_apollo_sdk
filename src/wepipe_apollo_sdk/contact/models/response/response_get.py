@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field
-from .data import Data
+from typing import List
+from .contact import Contact
 
 
 class ResponseGet(BaseModel):
-    data: Data = Field(default=None, alias='person')
+    data: List[Contact] = Field(default=None, alias='contacts')

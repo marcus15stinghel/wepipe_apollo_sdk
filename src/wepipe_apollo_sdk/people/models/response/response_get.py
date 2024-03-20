@@ -3,4 +3,4 @@ from .people import People
 
 
 class ResponseGet(BaseModel):
-    people: People = Field(default=None, alias='person')
+    data: People = Field(default=None, alias='person')

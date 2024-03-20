@@ -2,7 +2,7 @@ from pydantic import BaseModel, Field
 from .organization import Organization
 
 
-class Data(BaseModel):
+class Contact(BaseModel):
     organization: Organization = Field(default=None, alias='enriched_organization')
     first_name: str = Field(default=None, alias='first_name')
     last_name: str = Field(default=None, alias='last_name')

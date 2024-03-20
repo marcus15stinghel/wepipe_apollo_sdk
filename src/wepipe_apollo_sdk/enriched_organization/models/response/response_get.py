@@ -3,4 +3,4 @@ from .organization import Organization
 
 
 class ResponseGet(BaseModel):
-    organization: Organization = Field(default=None, alias='organization')
+    data: Organization = Field(default=None, alias='organization')
